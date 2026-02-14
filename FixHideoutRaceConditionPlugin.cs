@@ -49,11 +49,6 @@ namespace DrakiaXYZ.FixHideoutRaceCondition
                 Logger.LogError("Unable to find call to hideoutClass.Init(Session)");
             }
 
-            for (int i = 0; i < codes.Count; i++)
-            {
-                Logger.LogWarning($"{codes[i]?.opcode}  {codes[i]?.operand?.ToString()}");
-            }
-
             return codes;
         }
     }
